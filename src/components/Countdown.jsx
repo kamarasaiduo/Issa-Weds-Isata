@@ -27,7 +27,6 @@ export default function Countdown() {
     return () => clearInterval(interval);
   }, []);
 
-  // 🎉 What shows AFTER countdown ends
   if (isOver) {
     return (
       <div className="mt-6 text-center text-white">
@@ -37,14 +36,13 @@ export default function Countdown() {
     );
   }
 
-  // ⏳ Normal countdown
   return (
-    <div className="flex flex-wrap gap-2 justify-center mt-4">
+    <div className="mx-auto mb-4 flex gap-2 justify-center mt-4 max-w-md">
       {time &&
         Object.entries(time).map(([k, v]) => (
           <div
             key={k}
-            className="bg-green-600 text-white rounded-xl px-3 py-2 shadow text-center min-w-[60px]"
+            className="bg-green-600 text-white rounded-xl px-4 py-2 shadow text-center w-20 flex flex-col items-center"
           >
             <p className="text-lg font-bold">{v}</p>
             <span className="text-xs uppercase">{k}</span>
