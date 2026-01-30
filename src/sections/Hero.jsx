@@ -1,41 +1,88 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Countdown from "../components/Countdown";
 
 export default function Hero() {
+  const [isHeroScrolled, setIsHeroScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSection = document.getElementById("hero-section");
+      if (heroSection) {
+        const heroBottom = heroSection.getBoundingClientRect().bottom;
+        // Check if hero section has been scrolled past (bottom is at or above viewport top)
+        setIsHeroScrolled(heroBottom <= 0);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    // Initial check
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section
-      className="relative min-h-screen bg-cover bg-center text-white"
-      style={{ backgroundImage: "url('/Issa-Weds-Isata/images/hero.jpg')" }}
-    >
-      {/* Sticky header: stays until hero section is fully scrolled */}
-      <div className="sticky top-0 z-20 w-full">
+    <>
+      {/* Sticky header that appears AFTER hero section is scrolled */}
+      <div
+        className={`fixed top-0 z-50 w-full transition-opacity duration-300 ${
+          isHeroScrolled ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
         <h2
-          className="w-full text-center text-5xl md:text-7xl whitespace-nowrap"
+          className="w-full text-center text-4xl md:text-6xl whitespace-nowrap"
           style={{
             fontFamily: "'Great Vibes', cursive",
             color: "#FFD700",
             fontWeight: 400,
             textShadow: "2px 2px 10px rgba(0,0,0,0.7)",
-            background: "rgba(0,0,0,0.4)",
-            padding: "1rem 0",
+            background: "rgba(0,0,0,0.8)",
+            padding: "0.75rem 0",
           }}
         >
           Wedding Ceremony
         </h2>
       </div>
 
-      {/* Hero content container */}
-      <div className="flex flex-col items-center justify-center min-h-screen pt-40">
-        <div className="bg-black/60 p-8 rounded-2xl text-center text-blue-500 max-w-md md:max-w-lg">
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-2 text-white">Issa & Isata</h1>
-          <p className="text-lg text-white">We are getting married</p>
-          <p className="mt-2 text-white">📅 May 09 and 10, 2026 • 📍 Makeni</p>
-
-          <p className="mt-4 text-yellow-500 text-2xl font-semibold">Only</p>
-          <Countdown />
-          <p className="mt-2 text-yellow-500 text-2xl font-semibold">Left</p>
+      <section
+        id="hero-section"
+        className="relative min-h-screen bg-cover bg-center text-white"
+        style={{ backgroundImage: "url('/Issa-Weds-Isata/images/hero.jpg')" }}
+      >
+        {/* Original header inside hero section - stays fixed until scrolled past */}
+        <div className="absolute top-0 w-full z-20">
+          <h2
+            className="w-full text-center text-5xl md:text-7xl whitespace-nowrap"
+            style={{
+              fontFamily: "'Great Vibes', cursive",
+              color: "#FFD700",
+              fontWeight: 400,
+              textShadow: "2px 2px 10px rgba(0,0,0,0.7)",
+              background: "rgba(0,0,0,0.4)",
+              padding: "1rem 0",
+            }}
+          >
+            Wedding Ceremony
+          </h2>
         </div>
-      </div>
-    </section>
+
+        {/* Hero content container */}
+        <div className="flex flex-col items-center justify-center min-h-screen pt-40">
+          <div className="bg-black/60 p-8 rounded-2xl text-center text-blue-500 max-w-md md:max-w-lg">
+            <h1 className="text-3xl md:text-4xl font-extrabold mb-2 text-white">
+              Issa & Isata
+            </h1>
+            <p className="text-lg text-white">We are getting married</p>
+            <p className="mt-2 text-white">
+              📅 May 09 and 10, 2026 • 📍 Makeni
+            </p>
+
+            <p className="mt-4 text-yellow-500 text-2xl font-semibold">Only</p>
+            <Countdown />
+            <p className="mt-2 text-yellow-500 text-2xl font-semibold">Left</p>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
