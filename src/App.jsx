@@ -9,7 +9,7 @@ import Footer from "./sections/Footer";
 
 export default function App() {
   return (
-    <div className="font-sans scroll-smooth">
+    <div className="font-sans scroll-smooth overflow-x-hidden w-full">
       <Hero />
       <Info />
       <Program />
