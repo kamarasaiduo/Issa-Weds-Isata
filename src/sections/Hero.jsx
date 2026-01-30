@@ -5,7 +5,8 @@ export default function Hero() {
   return (
     <section
       className="relative min-h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
-      style={{ backgroundImage: "url('/images/hero.jpg')" }}
+      style={{ backgroundImage: "url('/Issa-Weds-Isata/images/hero.jpg')" }}
+
     >
       {/* Wedding Ceremony sticky at top until hero scrolls past */}
       <h2

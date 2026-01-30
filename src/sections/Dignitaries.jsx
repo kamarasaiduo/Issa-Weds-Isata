@@ -1,4 +1,5 @@
 import React from "react";
+
 import { dignitaries } from "../data/dignitaries";
 
 export default function Dignitaries() {

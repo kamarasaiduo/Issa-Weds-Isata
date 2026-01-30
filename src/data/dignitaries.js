@@ -1,3 +1,4 @@
+
 export const dignitaries = [
   {
     role: "Best Men",
@@ -5,7 +6,7 @@ export const dignitaries = [
       {
         name: "Mr. Alie Shereton Jalloh",
         description: "Childhood friend of the groom",
-        image: "/images/bestmen/saiduokamara.png",
+        image: "/Issa-Weds-Isata/images/bestmen/saiduokamara.png"
       },
       {
         name: "Mr. Santigie Sorie Kargbo",
