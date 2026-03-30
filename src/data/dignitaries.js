@@ -96,4 +96,17 @@ export const dignitaries = [
   },
 
    
+
+
+    {
+    role: "Chairman of the Day",
+    people: [
+      {
+        name: "Gibrilla Amitab Mansaray",
+        description: "Ernest Bai Koroma University",
+        image: "/images/groomsmen/groom1.jpg",
+      },
+    ],
+  },
 ];
+
