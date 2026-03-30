@@ -1,13 +1,12 @@
-export default function PersonCard({ name, description, image }) {
+export default function PersonCard({ name, image }) {
   return (
-    <div className="bg-white p-4 rounded-xl shadow text-center" data-aos="fade-up">
+    <div className="bg-white p-3 rounded-lg shadow text-center" data-aos="fade-up">
       <img
         src={image}
         alt={name}
-        className="w-24 h-24 mx-auto rounded-full object-cover mb-3"
+        className="w-20 h-20 mx-auto rounded-full object-cover"
       />
-      <h4 className="font-semibold text-lg">{name}</h4>
-      <p className="text-gray-600 text-sm">{description}</p>
+      <h4 className="font-semibold text-sm mt-2 line-clamp-2">{name}</h4>
     </div>
   );
 }

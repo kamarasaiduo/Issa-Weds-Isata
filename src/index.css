@@ -1,8 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  overflow-x: hidden;
-  width: 100%;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-800;
+  }
+}
+
+@layer components {
+  .perspective {
+    perspective: 1000px;
+  }
+  
+  .card-3d {
+    transform-style: preserve-3d;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gold rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gold/80;
+}
+
+/* Animation Classes */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-gold via-rose to-sage bg-clip-text text-transparent;
 }

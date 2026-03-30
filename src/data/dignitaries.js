@@ -6,12 +6,12 @@ export const dignitaries = [
       {
         name: "Mr. Alie Shereton Jalloh",
         description: "Childhood friend of the groom",
-        image: "/Issa-Weds-Isata/images/bestmen/saiduokamara.png"
+        image: "/Issa-Weds-Isata/images/bestmen/alie.png"
       },
       {
         name: "Mr. Santigie Sorie Kargbo",
         description: "Childhood friend of the groom",
-        image: "/images/bestmen/santigie.jpg",
+        image: "/Issa-Weds-Isata/images/bestmen/santigie.png"
       },
       {
         name: "Mr. Osama Kamara",
@@ -31,54 +31,69 @@ export const dignitaries = [
       {
         name: "Mr. Saidu O. Kamara",
         description: "Childhood friend of the groom",
-        image: "/images/bestmen/saiduokamara.png",
+        image: "/Issa-Weds-Isata/images/bestmen/saiduokamara.png"
       },
     ],
   },
+
   {
     role: "Bridesmaids",
     people: [
       {
-        name: "Made 1",
+        name: "Zainab Thoronka",
         description: "Childhood friend of the bride",
-        image: "/images/bridesmaids/maid1.jpg",
+        image: "/Issa-Weds-Isata/images/bridemaids/zaibathoronka.png",
       },
       {
-        name: "Made 2",
+        name: "Iye Kamara",
         description: "Childhood friend of the bride",
-        image: "/images/bridesmaids/maid2.jpg",
+        image: "/Issa-Weds-Isata/images/bridemaids/iyekamara.png",
       },
       {
-        name: "Made 3",
+        name: "Nanah Sheriff",
         description: "Childhood friend of the bride",
-        image: "/images/bridesmaids/maid3.jpg",
+        image: "/Issa-Weds-Isata/images/bridemaids/nanahsheriff.png",
       },
       {
         
-        name: "Made 4",
+        name: "Isha Kamara",
         description: "Childhood friend of the bride",
-        image: "/images/bridesmaids/maid4.jpg",
+         image: "/Issa-Weds-Isata/images/bridemaids/ishakamara.png"
       },
       {
-        name: "Made 5",
+        name: "Saffie Kallon",
         description: "Childhood friend of the bride",
-        image: "/images/bridesmaids/maid5.jpg",
+        image: "/Issa-Weds-Isata/images/bridemaids/saffiekallon.png",
       },
       {
-        name: "Made 6",
+        name: "Isata M. Kamara",
         description: "Childhood friend of the bride",
-        image: "/images/bridesmaids/maid6.jpg",
+        image: "/Issa-Weds-Isata/images/bridemaids/isatamkamara.png",
       },
     ],
   },
+
   {
     role: "Groomsmen",
     people: [
       {
-        name: "Michael Conteh",
+        name: "Foday Thoronka",
         description: "University colleague",
         image: "/images/groomsmen/groom1.jpg",
       },
     ],
   },
+
+    {
+    role: "Maid of Honor",
+    people: [
+      {
+        name: "Fatmata N. Kamara",
+        description: "University colleague",
+        image: "/images/groomsmen/groom1.jpg",
+      },
+    ],
+  },
+
+   
 ];
