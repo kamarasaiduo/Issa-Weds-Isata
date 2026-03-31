@@ -161,7 +161,7 @@ export const dignitaries = [
   },
 
    {
-  role: "Godparents",
+  role: "God Parents",
   people: [
     {
       name: "Mrs. Adamasay Koroma ",
@@ -176,12 +176,12 @@ export const dignitaries = [
     },
 
       {
-      name: "Ernest B. Kamara",
+      name: "Mr. Ernest B. Kamara",
       description: "Ernest Bai Koroma University",
       image: "/Issa-Weds-Isata/images/GodParents/ernest.jpg",
     },
         {
-      name: "Abdul I. Fornah",
+      name: "Mr. Abdul I. Fornah",
       description: "Ernest Bai Koroma University",
       image: "/Issa-Weds-Isata/images/GodParents/abdul.jpg",
     }
@@ -189,6 +189,95 @@ export const dignitaries = [
   ],
 },
    
+{
+  role: "God Witness",
+  people: [
+    {
+      name: "Tidankay Kallon ",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/adamasay.jpg",
+    },
+
+      {
+      name: "Isata Bundu Kamara",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/zainab.jpg",
+    },
+
+      {
+      name: "Fanta Kamara",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/ernest.jpg",
+    },
+        {
+      name: "Saffiatu Bundu",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/abdul.jpg",
+    },
+       {
+      name: "Memuna Conteh",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/abdul.jpg",
+    }
+
+  ],
+},
+
+{
+  role: "Ushers",
+  people: [
+    {
+      name: "Alfred Kargbo ",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/adamasay.jpg",
+    },
+
+      {
+      name: "Alice K. Bangura",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/zainab.jpg",
+    },
+
+      {
+      name: "Fatmata M. Conteh",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/ernest.jpg",
+    },
+        {
+      name: "Mariama Jah",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/abdul.jpg",
+    },
+       {
+      name: "Mohamed Bangura",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/abdul.jpg",
+    },
+
+     {
+      name: "Fatmata Janneh",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/abdul.jpg",
+    },
+
+     {
+      name: "Blessing Yankaine Kamara",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/abdul.jpg",
+    }
+    ,
+     {
+      name: "Alusine Kargbo",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/abdul.jpg",
+    },
+     {
+      name: "Mohamed Kanu",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/GodParents/abdul.jpg",
+    }
+  ],
+},
 
 ];
 
