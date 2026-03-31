@@ -2,6 +2,7 @@ import React from "react";
 
 const program = [
   {
+    
     date: "09-06-2026",
     time: "12:00 PM",
     event: "Engagement Ceremony",
@@ -44,7 +45,10 @@ const sparkleStyle = `
 
 export default function Program() {
   return (
-    <section className="py-12 px-4 bg-pink-50 relative" data-aos="fade-up">
+    <section
+     id="program" 
+    
+    className="py-12 px-4 bg-pink-50 relative" data-aos="fade-up">
       <style>{sparkleStyle}</style>
 
       <h2 className="text-3xl font-bold text-center mb-10">
