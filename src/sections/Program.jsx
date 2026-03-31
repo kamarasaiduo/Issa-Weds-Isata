@@ -4,7 +4,7 @@ const program = [
   {
     date: "09-06-2026",
     time: "12:00 PM",
-    event: "Wedding Ceremony",
+    event: "Engagement Ceremony",
     location: "Kabia Drive by Pain Square Makeni",
     mosque: "Back of Pain Square Mosque",
     imam: "Sheikh Janneh (Chief Imam)",

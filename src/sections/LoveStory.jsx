@@ -4,19 +4,19 @@ import { FaHeart, FaRing, FaCalendarAlt } from "react-icons/fa";
 export default function LoveStory() {
   const milestones = [
     {
-      year: "2020",
+      year: "2015",
       title: "First Meeting",
       description: "We met at a mutual friend's visit in Makeni",
       icon: <FaHeart className="text-rose-500" />
     },
     {
-      year: "2023",
+      year: "2015",
       title: "Dating",
       description: "Started dating and building our relationship",
       icon: <FaHeart className="text-pink-500" />
     },
     {
-      year: "2025",
+      year: "2019",
       title: "Engagement",
       description: "Issa proposed on a beautiful beach sunset",
       icon: <FaRing className="text-gold" />

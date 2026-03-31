@@ -60,9 +60,14 @@ export default function Navbar() {
             className="flex items-center space-x-2"
             onClick={(e) => handleNavClick(e, '#hero')}
           >
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#FFA500] flex items-center justify-center">
-              <span className="text-white font-bold text-xl md:text-2xl font-serif">I&I</span>
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-[#D4AF37] shadow-md">
+              <img
+                src="/Issa-Weds-Isata/images/logo.png"
+                alt="Issa & Isata Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
+
             <span className="text-lg md:text-xl font-serif font-semibold text-[#D4AF37]">
               Issa & Isata
             </span>

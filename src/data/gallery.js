@@ -1,8 +1,7 @@
 export const gallery = [
-  "/images/photo1.jpg",
-  "/images/photo2.jpg",
-  "/images/photo3.jpg",
-  "/images/photo4.jpg",
-  "/images/photo5.jpg",
-  "/images/photo6.jpg",
+  "/Issa-Weds-Isata/images/marriage_images/souvenir_photo1.jpg",
+   "/Issa-Weds-Isata/images/marriage_images/souvenir_photo2.jpg",
+   "/Issa-Weds-Isata/images/marriage_images/souvenir_photo3.jpg",
+
+
 ];
