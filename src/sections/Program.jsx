@@ -17,19 +17,19 @@ const program = [
     location: "Team Jonas Resort Entertainment Center - Ford Street",
     activities: [
       "Arrival of Guests",
-      "Arrival of the Bride, Groom and Entourage",
+      "Arrival of the Bride, Groom and Entourage 🎉",
       "Opening Prayer - Sheik Ibtahim Sorie Kargbo 🎉",
       "Introduction of Chairman",
       "Chairman Opening Remarks",
-      "Blessing of the Cake - Sheik Ibtahim Sorie Kargbo 🎉",
-      "Cutting of the Cake - Bride and Groom",
+      "Blessing of the Cake - Sheik Ibtahim Sorie Kargbo ",
+      "Cutting of the Cake - Bride and Groom 🎉",
       "Bridesmaid and Groomsman",
-      "Toast to the health of the Bride and Groom",
+      "Toast to the health of the Bride and Groom 🎉",
       "Toast to the Bride’s Family",
       "Toast to the Groom’s Family",
       "Toast to the Guests",
       "Presentation of Gifts",
-      "Vote of Thanks - Bride",
+      "Vote of Thanks - Bride 🎉",
       "Closing Prayer - Sheik Issa Kokoh",
     ],
   },
@@ -96,12 +96,12 @@ export default function Program() {
 
           {/* Activities Card (Reception) */}
           {item.activities && (
-            <div className="relative bg-white rounded-2xl p-6 mt-3 shadow-xl overflow-visible border-4 border-pink-300">
+            <div className="relative bg-white rounded-2xl p-6 mt-3 shadow-xl overflow-hidden border-4 border-pink-300">
               {/* Love flowers border (corners) */}
-              <div className="absolute top-0 left-0 w-12 h-12 bg-[url('/images/flower1.png')] bg-contain bg-no-repeat pointer-events-none z-10"></div>
-              <div className="absolute top-0 right-0 w-12 h-12 bg-[url('/images/flower2.png')] bg-contain bg-no-repeat pointer-events-none z-10"></div>
-              <div className="absolute bottom-0 left-0 w-12 h-12 bg-[url('/images/flower1.png')] bg-contain bg-no-repeat pointer-events-none z-10"></div>
-              <div className="absolute bottom-0 right-0 w-12 h-12 bg-[url('/images/flower2.png')] bg-contain bg-no-repeat pointer-events-none z-10"></div>
+              <div className="absolute top-0 left-0 w-12 h-12 bg-[url('/images/flower1.png')] bg-contain bg-no-repeat pointer-events-none"></div>
+              <div className="absolute top-0 right-0 w-12 h-12 bg-[url('/images/flower2.png')] bg-contain bg-no-repeat pointer-events-none"></div>
+              <div className="absolute bottom-0 left-0 w-12 h-12 bg-[url('/images/flower1.png')] bg-contain bg-no-repeat pointer-events-none"></div>
+              <div className="absolute bottom-0 right-0 w-12 h-12 bg-[url('/images/flower2.png')] bg-contain bg-no-repeat pointer-events-none"></div>
 
               {/* Cake in the center */}
               <div className="flex justify-center mb-6 relative">
@@ -128,20 +128,18 @@ export default function Program() {
               ))}
 
               {/* Centered text content */}
-              <div className="flex flex-col items-center text-left relative z-20">
+              <div className="flex flex-col items-center text-left">
                 <p className="font-semibold text-pink-600 mb-4 text-xl">
                   🎉 Reception Activities
                 </p>
 
-                <div className="max-w-full overflow-x-auto">
-                  <ol className="list-decimal list-inside text-gray-700 space-y-1 min-w-full">
-                    {item.activities.map((activity, index) => (
-                      <li key={index} className="break-words whitespace-normal">
-                        {activity}
-                      </li>
-                    ))}
-                  </ol>
-                </div>
+                <ol className="list-decimal list-inside text-gray-700 space-y-1 max-w-md pb-8">
+                  {item.activities.map((activity, index) => (
+                    <li key={index}>
+                      {activity}
+                    </li>
+                  ))}
+                </ol>
               </div>
             </div>
           )}
