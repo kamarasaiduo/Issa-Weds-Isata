@@ -19,7 +19,7 @@ const program = [
       "Arrival of Guests",
       "Arrival of the Bride, Groom and Entourage",
       "Opening Prayer - Sheik Ibtahim Sorie Kargbo",
-      "Introduction of Chairman ",
+      "Introduction of Chairman",
       "Chairman Opening Remarks",
       "Blessing of the Cake - Sheik Ibtahim Sorie Kargbo",
       "Cutting of the Cake - Bride and Groom",
@@ -31,7 +31,6 @@ const program = [
       "Presentation of Gifts",
       "Vote of Thanks - Bride",
       "Closing Prayer - Sheik Issa Kalokoh",
-      
     ],
   },
 ];
@@ -97,21 +96,19 @@ export default function Program() {
 
           {/* Activities Card (Reception) */}
           {item.activities && (
-            <div className="relative bg-white rounded-2xl p-6 mt-3  shadow-xl overflow-hidden border-4 border-pink-300">
+            <div className="relative bg-white rounded-2xl p-6 mt-3 shadow-xl overflow-hidden border-4 border-pink-300">
               {/* Love flowers border (corners) */}
               <div className="absolute top-0 left-0 w-12 h-12 bg-[url('/images/flower1.png')] bg-contain bg-no-repeat pointer-events-none"></div>
               <div className="absolute top-0 right-0 w-12 h-12 bg-[url('/images/flower2.png')] bg-contain bg-no-repeat pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 w-12 h-12 bg-[url('/images/flower1.png')] bg-contain bg-no-repeat pointer-events-none"></div>
               <div className="absolute bottom-0 right-0 w-12 h-12 bg-[url('/images/flower2.png')] bg-contain bg-no-repeat pointer-events-none"></div>
 
-            
-
               {/* Cake in the center */}
               <div className="flex justify-center mb-6 relative">
                 <div className="text-5xl">🎂</div>
               </div>
 
-                {/* Marriage rings closer to the cake */}
+              {/* Marriage rings closer to the cake */}
               <div className="absolute top-1/3 right-1/3 text-3xl animate-bounce">
                 💍
               </div>
@@ -136,9 +133,11 @@ export default function Program() {
                   🎉 Reception Activities
                 </p>
 
-                <ol className="list-decimal list-inside text-gray-700 space-y-1 max-w-md">
+                <ol className="list-decimal list-inside text-gray-700 space-y-1 max-w-md whitespace-nowrap">
                   {item.activities.map((activity, index) => (
-                    <li key={index}>{activity}</li>
+                    <li key={index} className="whitespace-nowrap">
+                      {index + 1}. {activity}
+                    </li>
                   ))}
                 </ol>
               </div>
