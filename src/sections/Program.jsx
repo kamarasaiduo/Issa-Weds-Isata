@@ -7,29 +7,31 @@ const program = [
     time: "12:00 PM",
     event: "Engagement Ceremony",
     location: "Kabia Drive by Pain Square Makeni",
-    mosque: "Back of Pain Square Mosque",
+    mosque: "Masjidul Qudus - Back of Pain Square Mosque",
     imam: "Sheikh Janneh (Chief Imam)",
   },
   {
     date: "10-06-2026",
     time: "04:00 PM",
     event: "Reception",
-    location: "Team Jonas Resort Entertainment Center",
+    location: "Team Jonas Resort Entertainment Center - Ford Street",
     activities: [
-      "Arrival of Wedding Entourage",
+      "Arrival of Guests",
+      "Arrival of the Bride, Groom and Entourage",
       "Opening Prayer - Sheik Ibtahim Sorie Kargbo",
       "Introduction of Chairman ",
       "Chairman Opening Remarks",
-      "Blessing of the Cake - Pst. Amos Sesay",
+      "Blessing of the Cake - Sheik Ibtahim Sorie Kargbo",
       "Cutting of the Cake - Bride and Groom",
       "Bridesmaid and Groomsman",
       "Toast to the health of the Bride and Groom",
       "Toast to the Bride’s Family",
       "Toast to the Groom’s Family",
       "Toast to the Guests",
-      "Vote of Thanks - Bride",
       "Presentation of Gifts",
-      "Closing Prayer - Pastor",
+      "Vote of Thanks - Bride",
+      "Closing Prayer - Sheik Issa Kalokoh",
+      
     ],
   },
 ];
@@ -55,19 +57,19 @@ export default function Program() {
         Wedding Program
       </h2>
 
-      <div className="max-w-2xl mx-auto space-y-6">
+      <div className="max-w-2xl mx-auto space-y-2">
         {program.map((item, i) => (
           <div key={i} className="relative">
             {/* Main Card */}
-            <div className="flex gap-6 bg-white shadow-md rounded-xl p-5 relative z-10">
+            <div className="flex gap-2 bg-white shadow-md rounded-xl p-3 relative z-10">
               {/* Left: Date & Time */}
-              <div className="w-32 border-r pr-4 text-gray-700">
+              <div className="w-32 border-r pr-4 text-gold">
                 <p className="font-semibold">{item.date}</p>
                 <p className="text-sm">{item.time}</p>
               </div>
 
               {/* Right: Details */}
-              <div className="flex-1 space-y-1">
+              <div className="flex-1 space-y-1 ml-1">
                 <p className="font-semibold text-lg text-gray-800">
                   {item.event}
                 </p>
@@ -95,7 +97,7 @@ export default function Program() {
 
           {/* Activities Card (Reception) */}
           {item.activities && (
-            <div className="relative bg-white rounded-2xl p-6 mt-4 shadow-xl overflow-hidden border-4 border-pink-300">
+            <div className="relative bg-white rounded-2xl p-6 mt-3  shadow-xl overflow-hidden border-4 border-pink-300">
               {/* Love flowers border (corners) */}
               <div className="absolute top-0 left-0 w-12 h-12 bg-[url('/images/flower1.png')] bg-contain bg-no-repeat pointer-events-none"></div>
               <div className="absolute top-0 right-0 w-12 h-12 bg-[url('/images/flower2.png')] bg-contain bg-no-repeat pointer-events-none"></div>
@@ -115,7 +117,7 @@ export default function Program() {
               </div>
 
               {/* Sparkles across entire card */}
-              {Array.from({ length: 25 }).map((_, idx) => (
+              {Array.from({ length: 50 }).map((_, idx) => (
                 <div
                   key={idx}
                   className="absolute w-2 h-2 bg-yellow-300 rounded-full"

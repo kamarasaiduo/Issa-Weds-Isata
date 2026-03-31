@@ -1,16 +1,7 @@
 
 export const dignitaries = [
   
- {
-  role: "Chairman of the Day",
-  people: [
-    {
-      name: "Gibrilla Amitab Mansaray",
-      description: "Ernest Bai Koroma University",
-      image: "/Issa-Weds-Isata/images/chairman/chairman.jpg",
-    }
-  ],
-},
+
 
   {
     role: "Best Men",
@@ -195,7 +186,7 @@ export const dignitaries = [
     {
       name: "Tidankay Kallon ",
       description: "Ernest Bai Koroma University",
-      image: "/Issa-Weds-Isata/images/GodParents/adamasay.jpg",
+      image: "/Issa-Weds-Isata/images/GodParents/adamasa.jpg",
     },
 
       {
@@ -229,7 +220,7 @@ export const dignitaries = [
     {
       name: "Alfred Kargbo ",
       description: "Ernest Bai Koroma University",
-      image: "/Issa-Weds-Isata/images/GodParents/adamasay.jpg",
+      image: "/Issa-Weds-Isata/images/GodParents/adamasa.jpg",
     },
 
       {
@@ -278,6 +269,29 @@ export const dignitaries = [
     }
   ],
 },
+
+ {
+  role: "Chairman of the Day",
+  people: [
+    {
+      name: "Gibrilla Amitab Mansaray",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/chairman/chairman.jpg",
+    }
+  ],
+},
+
+ {
+  role: "Officiating Imam",
+  people: [
+    {
+      name: "Shiek Janneh (Chief Imam - Masjidul Qudus)",
+      description: "Ernest Bai Koroma University",
+      image: "/Issa-Weds-Isata/images/chairman/chairma.jpg",
+    }
+  ],
+},
+
 
 ];
 

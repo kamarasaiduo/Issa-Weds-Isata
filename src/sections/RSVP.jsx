@@ -627,37 +627,6 @@ export default function RSVP() {
           </div>
         )}
         
-        {/* FAQ Section */}
-        <div className="mt-12 bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
-          <h4 className="text-xl font-bold text-gray-800 mb-4 text-center">
-            ❓ Frequently Asked Questions
-          </h4>
-          <div className="space-y-4">
-            {[
-              {
-                q: "Why does it open Google Forms?",
-                a: "Google Forms helps us organize all RSVPs automatically and send you a confirmation email. Your information is pre-filled for convenience."
-              },
-              {
-                q: "What if Google Forms is blocked?",
-                a: "Please contact us directly via WhatsApp at +232 797 673 76 and we'll help you submit your RSVP manually."
-              },
-              {
-                q: "Can I submit for my family?",
-                a: "Yes! Please include all guests in the 'Number of Guests' field and list their names in the message section if needed."
-              },
-              {
-                q: "What if my plans change after submitting?",
-                a: "Please contact us via WhatsApp as soon as possible so we can update our records."
-              }
-            ].map((faq, index) => (
-              <div key={index} className="border-b border-gray-100 pb-4 last:border-0 last:pb-0">
-                <p className="font-medium text-gray-800 mb-1">{faq.q}</p>
-                <p className="text-gray-600 text-sm">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
