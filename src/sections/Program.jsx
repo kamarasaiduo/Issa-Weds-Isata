@@ -30,7 +30,7 @@ const program = [
       "Toast to the Guests",
       "Presentation of Gifts",
       "Vote of Thanks - Bride 🎉",
-      "Closing Prayer - Sheik Issa Kokoh",
+      "Closing Prayer - Sheik Issa Kalokoh",
     ],
   },
 ];
