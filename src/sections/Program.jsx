@@ -3,7 +3,7 @@ import React from "react";
 const program = [
   {
     
-    date: "09-06-2026",
+    date: "09-05-2026",
     time: "12:00 PM",
     event: "Engagement Ceremony",
     location: "Kabia Drive by Pain Square Makeni",
@@ -11,7 +11,7 @@ const program = [
     imam: "Sheikh Janneh (Chief Imam)",
   },
   {
-    date: "10-06-2026",
+    date: "10-05-2026",
     time: "04:00 PM",
     event: "Reception",
     location: "Team Jonas Resort Entertainment Center - Ford Street",
